@@ -19,7 +19,7 @@ function Profile(props)
 
         <div className={styles['name']}>
           <div className={styles['first-name']}>{firstName}</div>
-          <div className={styles['last-name']}>{lastName}</div>
+          {/* <div className={styles['last-name']}>{lastName}</div> */}
         </div>
 
       </div>

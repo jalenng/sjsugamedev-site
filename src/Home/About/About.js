@@ -22,11 +22,11 @@ function About() {
         </div>
         
         <div className={styles['scroll-left-4']}>
-          join <span className={styles['emphasize']}>game jams</span>
+          leverage <span className={styles['emphasize']}>resources</span>
         </div>
 
         <div className={styles['scroll-left-5']}>
-          <span className={styles['emphasize']}>create</span> games
+          join <span className={styles['emphasize']}>game jams</span> and <span className={styles['emphasize']}>create games</span>
         </div>
         
       </div>
