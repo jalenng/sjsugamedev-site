@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/sjsugamedev-site/static/css/main.36fa5b07.css",
+    "main.js": "/sjsugamedev-site/static/js/main.b8eae32e.js",
+    "static/media/library.png": "/sjsugamedev-site/static/media/library.19f6d1c04bb60d9f4319.png",
+    "static/media/logo.png": "/sjsugamedev-site/static/media/logo.d0f0b317623147c17f62.png",
+    "static/media/welcome.png": "/sjsugamedev-site/static/media/welcome.f4b52928b2dbc93c9be8.png",
+    "static/media/itchio.svg": "/sjsugamedev-site/static/media/itchio.a14ca53d0c9ff63b20af495cf21a0065.svg",
+    "static/media/instagram.svg": "/sjsugamedev-site/static/media/instagram.686d86871525fdbc44a3d38c25cf0805.svg",
+    "index.html": "/sjsugamedev-site/index.html",
+    "static/media/discord.svg": "/sjsugamedev-site/static/media/discord.d4a3ab2ea3edd0584e5a1a3768a70a52.svg",
+    "static/media/linkedin.svg": "/sjsugamedev-site/static/media/linkedin.6718e6e616f72cb6579141e7bd4244be.svg",
+    "static/media/twitter.svg": "/sjsugamedev-site/static/media/twitter.8f94fa9925914dd344a27712e98c92b2.svg",
+    "static/media/facebook.svg": "/sjsugamedev-site/static/media/facebook.53eaefd13f44ee6a0c982f54e64d2a12.svg",
+    "static/media/twitch.svg": "/sjsugamedev-site/static/media/twitch.612de4155edf8b8181fc45f8835cf92f.svg",
+    "static/media/chevron-down.svg": "/sjsugamedev-site/static/media/chevron-down.1bb92797f14b051daa2594e9485d9f75.svg",
+    "static/media/chevron-up.svg": "/sjsugamedev-site/static/media/chevron-up.71e2034117ba8faac7d38a8f5c5b109a.svg",
+    "static/media/geo-alt-fill.svg": "/sjsugamedev-site/static/media/geo-alt-fill.531ec300dacf670fd63eabfee39f0095.svg",
+    "main.36fa5b07.css.map": "/sjsugamedev-site/static/css/main.36fa5b07.css.map",
+    "main.b8eae32e.js.map": "/sjsugamedev-site/static/js/main.b8eae32e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.36fa5b07.css",
+    "static/js/main.b8eae32e.js"
+  ]
+}
