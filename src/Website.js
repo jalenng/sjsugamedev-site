@@ -26,7 +26,7 @@ const tabs = [
   }
 ]
 
-function Website() {
+function Website () {
   return (
     <div>
 
@@ -35,7 +35,8 @@ function Website() {
         <Banner styles={{
           backgroundColor: '#0055a2',
           color: '#ffffff'
-        }}>
+        }}
+        >
           SUMMER 2022 WORKSHOP IS LIVE! <a href='https://sjsugamedev.com/summer2022.html'>Read more</a>
         </Banner>
 

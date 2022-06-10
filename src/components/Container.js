@@ -1,6 +1,6 @@
 import styles from './Container.module.css'
 
-function Container(props) {
+function Container (props) {
   const backgroundStyles = {
     backgroundImage: props.backgroundImage,
     backgroundColor: props.backgroundColor,
@@ -16,13 +16,14 @@ function Container(props) {
       <div
         className={
           [
-            styles["container"],
-            props.isPadded ? styles['padded'] : null,
+            styles.container,
+            props.isPadded ? styles.padded : null,
             props.className
           ]
-          .filter(Boolean)
-          .join(" ")
-        }>
+            .filter(Boolean)
+            .join(' ')
+        }
+      >
         {props.children}
       </div>
 

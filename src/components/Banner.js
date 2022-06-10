@@ -1,8 +1,8 @@
 import styles from './Banner.module.css'
 
-function Banner(props) {
+function Banner (props) {
   return (
-    <div className={styles['banner']} style={props.styles}>
+    <div className={styles.banner} style={props.styles}>
       {props.children}
     </div>
   )

@@ -1,9 +1,9 @@
-import styles from './Officers.module.css';
+import styles from './Officers.module.css'
 
-import Container from "../../components/Container";
-import Profile from "./Profile";
+import Container from '../../components/Container'
+import Profile from './Profile'
 
-import logo from '../../images/logo.png';
+import logo from '../../images/logo.png'
 
 const officers = [
   {
@@ -43,26 +43,26 @@ const officers = [
   }
 ]
 
-function Officers() {
-	return (
-		<Container
-			isPadded={true}
-			className={styles['container']}
-		>
+function Officers () {
+  return (
+    <Container
+      isPadded
+      className={styles.container}
+    >
       <h2>Officers</h2>
 
       <div className={styles['officers-list']}>
         {officers.map(officer => (
-          <Profile 
-            key={officer.name} 
+          <Profile
+            key={officer.name}
             name={officer.name}
             position={officer.position}
             image={officer.image}
           />
         ))}
       </div>
-		</Container>
-	);
+    </Container>
+  )
 }
 
 export default Officers

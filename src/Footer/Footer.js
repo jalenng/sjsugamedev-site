@@ -1,11 +1,11 @@
 import Socials from './Socials'
 import FooterNav from './FooterNav'
 
-function Footer(props) {
+function Footer (props) {
   return (
     <div className='footer'>
-      <Socials/>
-      <FooterNav tabs={props.tabs}/>
+      <Socials />
+      <FooterNav tabs={props.tabs} />
     </div>
   )
 }

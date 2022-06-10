@@ -4,13 +4,13 @@ import Container from '../components/Container'
 
 import { Link } from 'react-router-dom'
 
-function createTab(tab) {
-  // External link: use <a>
+function createTab (tab) {
   if (tab.isExternal) {
+    // External link: use <a>
     return (
       <a
         href={tab.link}
-        className={styles['tab']}
+        className={styles.tab}
         key={tab.label}
       >
         <div className={styles['tab-text']}>
@@ -18,14 +18,12 @@ function createTab(tab) {
         </div>
       </a>
     )
-  }
-
-  // Internal link: use <Link>
-  else {
+  } else {
+    // Internal link: use <Link>
     return (
       <Link
         to={tab.link}
-        className={styles['tab']}
+        className={styles.tab}
         key={tab.label}
       >
         <div className={styles['tab-text']}>
@@ -36,7 +34,7 @@ function createTab(tab) {
   }
 }
 
-function FooterNav(props) {
+function FooterNav (props) {
   const homeTab = {
     label: 'Home',
     link: '/'
@@ -44,7 +42,7 @@ function FooterNav(props) {
   const tabs = [homeTab, ...props.tabs]
 
   return (
-    <Container isPadded={true} className={styles['container']}>
+    <Container isPadded className={styles.container}>
       {tabs.map(createTab)}
     </Container>
   )
