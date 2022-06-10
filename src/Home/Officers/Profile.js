@@ -8,7 +8,7 @@ function Profile(props)
   return (
     <div className={styles['profile']}>
       {/* Image */}
-      <img src={props.image} className={styles['image']}/>
+      <img src={props.image} className={styles['image']} alt={props.name}/>
 
       {/* Text */}
       <div className={styles['text']}>

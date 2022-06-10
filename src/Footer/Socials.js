@@ -2,8 +2,6 @@ import styles from './Socials.module.css';
 
 import Container from '../components/Container'
 
-import { Link } from 'react-router-dom'
-
 import discordIcon from '../images/socials/discord.svg'
 import itchioIcon from '../images/socials/itchio.svg'
 import twitchIcon from '../images/socials/twitch.svg'
