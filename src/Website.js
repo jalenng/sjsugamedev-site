@@ -1,12 +1,13 @@
 import './Website.css'
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes, NavLink } from 'react-router-dom'
 
 import Banner from './components/Banner'
 import Header from './Navbar/Navbar'
 import Footer from './Footer/Footer'
 
-import Home from './Home/Home'
+import Home from './Home'
+import SummerWorkshop from './SummerWorkshop'
 
 const tabs = [
   {
@@ -30,14 +31,14 @@ function Website () {
   return (
     <div>
 
-      <BrowserRouter>
+      <HashRouter basename='/'>
 
         <Banner styles={{
           backgroundColor: '#0055a2',
           color: '#ffffff'
         }}
         >
-          SUMMER 2022 WORKSHOP IS LIVE! <a href='https://sjsugamedev.com/summer2022.html'>Read more</a>
+          SUMMER 2022 WORKSHOP IS LIVE! <NavLink to='/summer2022'>Read more</NavLink>
         </Banner>
 
         <Banner>
@@ -48,13 +49,15 @@ function Website () {
 
         <Routes>
           <Route path='/' exact element={<Home />} />
-          {/* <Route path='/games' exact element={<Games />} />
-        <Route path='/events' exact element={<Events />} /> */}
+          {/* <Route path='/games' exact element={<Games />} /> */}
+          {/* <Route path='/events' exact element={<Events />} /> */}
+
+          <Route path='/summer2022' exact element={<SummerWorkshop />} />
         </Routes>
 
         <Footer tabs={tabs} />
 
-      </BrowserRouter>
+      </HashRouter>
 
     </div>
   )

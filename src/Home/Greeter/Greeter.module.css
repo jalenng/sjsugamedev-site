@@ -3,7 +3,7 @@
   display: flex;  
   flex-direction: column;
   justify-content: center;
-  min-height: 640px;
+  min-height: 720px;
   width: 100%;
   word-spacing: 0.2em;
   row-gap: 52px;
@@ -14,14 +14,14 @@
 .emphasis1
 {
   text-transform: uppercase;
-  font-size: 72px;
+  font-size: 64px;
   font-weight: 600;
 }
 
 .emphasis2
 {
   text-transform: uppercase;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 600;
   color: #0055a2;
 }

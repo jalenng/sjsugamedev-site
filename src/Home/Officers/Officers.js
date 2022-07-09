@@ -1,9 +1,12 @@
 import styles from './Officers.module.css'
 
 import Container from '../../components/Container'
-import Profile from './Profile'
+import Profile from '../../components/Profile'
 
 import logo from '../../images/logo.png'
+import christianImage from '../../images/officers/christian.jpg'
+import jalenImage from '../../images/officers/jalen.png'
+import aidenImage from '../../images/officers/aiden.jpg'
 
 const officers = [
   {
@@ -24,12 +27,17 @@ const officers = [
   {
     name: 'Christian Acosta',
     position: 'Event Coordinator',
-    image: logo
+    image: christianImage
   },
   {
     name: 'Julius Moridis',
     position: 'Streaming Coordinator',
     image: logo
+  },
+  {
+    name: 'Aiden Sabater',
+    position: 'Community Manager',
+    image: aidenImage
   },
   {
     name: 'Jasmine S',
@@ -39,7 +47,7 @@ const officers = [
   {
     name: 'Jalen Ng',
     position: 'Web Director',
-    image: logo
+    image: jalenImage
   }
 ]
 

@@ -1,9 +1,10 @@
 import styles from './Navbar.module.css'
 
 import { NavLink } from 'react-router-dom'
-
 import Container from '../components/Container'
 import logo from '../images/logo.png'
+
+import MenuButton from './MenuButton'
 
 function createTab (tab) {
   if (tab.isExternal) {
@@ -43,7 +44,7 @@ function Navbar (props) {
       backgroundColor='#fff'
       className={styles.container}
     >
-      {/* Left */}
+      {/* Home */}
       <NavLink
         to='/'
         className={({ isActive }) =>
@@ -55,14 +56,18 @@ function Navbar (props) {
             .join(' ')}
       >
         <img src={logo} alt='Home' />
-        <div className={styles['home-button-text']}>
+        {/* <div className={styles['home-button-text']}>
           <span className={styles.main}>Game Dev Club</span>
           <br />
           <span className={styles.sub}> at <b>SAN JOSÉ STATE UNIVERSITY</b></span>
-        </div>
+        </div> */}
       </NavLink>
 
-      {/* Right */}
+      <div className={styles.tabs}>
+        <MenuButton />
+      </div>
+
+      {/* Other tabs */}
       <div className={styles.tabs}>
         {props.tabs.map(createTab)}
       </div>

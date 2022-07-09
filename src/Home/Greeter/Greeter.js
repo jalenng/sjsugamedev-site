@@ -1,10 +1,13 @@
 import styles from './Greeter.module.css'
 
+import { useState } from 'react'
+
 import Container from '../../components/Container'
 import ActionButton from '../../components/ActionButton'
+import Modal from '../../components/Modal'
 
 import welcomeImage from '../../images/welcome.png'
-import discordIcon from '../../images/socials/discord.svg'
+import youTubeIcon from '../../images/socials/youtube.svg'
 
 function Greeter () {
   const background =
@@ -14,6 +17,9 @@ function Greeter () {
       rgba(255, 255, 255, 0.67)
     ), 
     url(${welcomeImage})`
+
+  const [videoVisible, setVideoVisible] = useState(false)
+
   return (
     <Container
       isPadded
@@ -36,15 +42,23 @@ function Greeter () {
       {/* Buttons */}
       <div className={styles.buttonList}>
         <ActionButton
-          href='https://discord.gg/xGv8qYA'
+          onClick={() => setVideoVisible(true)}
           styles={{
             color: 'white',
-            backgroundColor: '#5865F2'
+            backgroundColor: '#dd2222'
           }}
         >
-          <img src={discordIcon} alt='Discord' width='32' height='32' />
-          Join our Discord
+          <img src={youTubeIcon} alt='YouTube' width='32' height='32' className='svg' />
+          Watch our promo
         </ActionButton>
+
+        {videoVisible && (
+          <Modal
+            onClose={() => setVideoVisible(false)}
+          >
+            <iframe width='100%' height='100%' src='https://www.youtube-nocookie.com/embed/si1OwWjZnk0?autoplay=1' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowFullScreen />
+          </Modal>
+        )}
       </div>
 
     </Container>

@@ -1,0 +1,49 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 1040;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  /* Center the container in the viewport */
+  position: fixed ;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  /* Maintain a 16:9 aspect ratio */
+  width: 100%;
+  
+  padding-bottom: 50%;
+  max-width: 89%;
+
+  background-color: #000000;
+  z-index: 1040;
+  border: 0px;
+}
+
+.container iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: #0055a2;
+  color: #ffffff;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  width: 48px;
+  height: 48px;
+
+  z-index: 1050;
+}

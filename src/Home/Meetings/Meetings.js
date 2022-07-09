@@ -49,7 +49,7 @@ function Meetings () {
             backgroundColor: '#5865F2'
           }}
         >
-          <img src={discordIcon} alt='Discord' width='32' height='32' />
+          <img src={discordIcon} alt='Discord' width='32' height='32' className='svg' />
           Join our Discord
         </ActionButton>
 
@@ -61,7 +61,7 @@ function Meetings () {
             backgroundColor: '#dd4b3e'
           }}
         >
-          <img src={geoIcon} alt='Discord' width='32' height='32' />
+          <img src={geoIcon} alt='Discord' width='32' height='32' className='svg' />
           SJSU Library
         </ActionButton>
 

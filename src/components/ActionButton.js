@@ -6,6 +6,7 @@ function ActionButton (props) {
       href={props.href}
       className={styles.button}
       style={props.styles}
+      onClick={props.onClick}
     >
       {props.children}
     </a>
