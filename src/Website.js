@@ -3,10 +3,11 @@ import './Website.css'
 import { HashRouter, Route, Routes, NavLink } from 'react-router-dom'
 
 import Banner from './components/Banner'
-import Header from './Navbar/Navbar'
-import Footer from './Footer/Footer'
+import Header from './Navbar'
+import Footer from './Footer'
 
 import Home from './Home'
+import Events from './Events'
 import SummerWorkshop from './SummerWorkshop'
 
 const tabs = [
@@ -33,13 +34,13 @@ function Website () {
 
       <HashRouter basename='/'>
 
-        <Banner styles={{
+        {/* <Banner styles={{
           backgroundColor: '#0055a2',
           color: '#ffffff'
         }}
         >
           SUMMER 2022 WORKSHOP IS LIVE! <NavLink to='/summer2022'>Read more</NavLink>
-        </Banner>
+        </Banner> */}
 
         <Banner>
           Is something missing? <a href='https://sjsugamedev.com'>Visit the old site</a>
@@ -50,7 +51,7 @@ function Website () {
         <Routes>
           <Route path='/' exact element={<Home />} />
           {/* <Route path='/games' exact element={<Games />} /> */}
-          {/* <Route path='/events' exact element={<Events />} /> */}
+          <Route path='/events' exact element={<Events />} />
 
           <Route path='/summer2022' exact element={<SummerWorkshop />} />
         </Routes>

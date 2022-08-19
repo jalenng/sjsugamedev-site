@@ -3,26 +3,31 @@ import styles from './Officers.module.css'
 import Container from '../../components/Container'
 import Profile from '../../components/Profile'
 
-import logo from '../../images/logo.png'
+import rafaelImage from '../../images/officers/rafael.png'
+import joshImage from '../../images/officers/josh.png'
+import yunseoImage from '../../images/officers/yunseo.jpg'
 import christianImage from '../../images/officers/christian.jpg'
-import jalenImage from '../../images/officers/jalen.png'
+import juliusImage from '../../images/officers/julius.jpg'
 import aidenImage from '../../images/officers/aiden.jpg'
+import jasmineImage from '../../images/officers/jasmine.png'
+import jalenImage from '../../images/officers/jalen.png'
+import jamesImage from '../../images/officers/james.webp'
 
 const officers = [
   {
     name: 'Rafael Padilla Perez',
     position: 'President',
-    image: logo
+    image: rafaelImage
   },
   {
-    name: 'Joshua Smith',
+    name: 'Josh Smith',
     position: 'Vice President',
-    image: logo
+    image: joshImage
   },
   {
     name: 'Yunseo (Claire) Han',
     position: 'Treasurer',
-    image: logo
+    image: yunseoImage
   },
   {
     name: 'Christian Acosta',
@@ -30,9 +35,9 @@ const officers = [
     image: christianImage
   },
   {
-    name: 'Julius Moridis',
+    name: 'Julius Maximos Moridis',
     position: 'Streaming Coordinator',
-    image: logo
+    image: juliusImage
   },
   {
     name: 'Aiden Sabater',
@@ -40,14 +45,19 @@ const officers = [
     image: aidenImage
   },
   {
-    name: 'Jasmine S',
+    name: 'Jasmine Serna',
     position: 'Graphic Designer',
-    image: logo
+    image: jasmineImage
   },
   {
     name: 'Jalen Ng',
     position: 'Web Director',
     image: jalenImage
+  },
+  {
+    name: 'James Morgan',
+    position: 'Advisor',
+    image: jamesImage
   }
 ]
 

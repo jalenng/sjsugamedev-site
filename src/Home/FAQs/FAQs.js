@@ -57,7 +57,7 @@ const questions = [
   }
 ]
 
-function FAQs() {
+function FAQs () {
   const [open, setOpen] = useState([])
 
   const toggleOpen = (index) => {

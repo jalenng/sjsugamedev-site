@@ -3,18 +3,18 @@ import styles from './Greeter.module.css'
 import { useState } from 'react'
 
 import Container from '../../components/Container'
-import ActionButton from '../../components/ActionButton'
+import VideoButton from '../../components/VideoButton'
 import Modal from '../../components/Modal'
 
 import welcomeImage from '../../images/welcome.png'
-import youTubeIcon from '../../images/socials/youtube.svg'
 
 function Greeter () {
   const background =
     `linear-gradient(
       to right,
-      rgba(255, 255, 255, 1.0), 
-      rgba(255, 255, 255, 0.67)
+      rgba(255, 255, 255, 0.9), 
+      rgba(255, 255, 255, 0.9), 
+      rgba(255, 255, 255, 0.33)
     ), 
     url(${welcomeImage})`
 
@@ -26,39 +26,37 @@ function Greeter () {
       backgroundImage={background}
       className={styles.container}
     >
+      <div className={styles.greetingFlex}>
 
-      {/* Text */}
-      <div className={styles.content}>
-        <h2>We are the</h2>
-        <span className={styles.emphasis1}>
-          Game Dev Club
-        </span>
-        <br />
-        <span className={styles.emphasis2}>
-          @ San José State University
-        </span>
-      </div>
+        {/* Left: text */}
+        <div className={styles.content}>
+          <h2>We are the</h2>
+          <span className={styles.emphasis1}>
+            Game Dev Club
+          </span>
+          <br />
+          <span className={styles.emphasis2}>
+            @ San José State University
+          </span>
+        </div>
 
-      {/* Buttons */}
-      <div className={styles.buttonList}>
-        <ActionButton
-          onClick={() => setVideoVisible(true)}
-          styles={{
-            color: 'white',
-            backgroundColor: '#dd2222'
-          }}
-        >
-          <img src={youTubeIcon} alt='YouTube' width='32' height='32' className='svg' />
-          Watch our promo
-        </ActionButton>
+        {/* Right */}
+        <div className={styles.videoBtn}>
+          {/* Button */}
+          <VideoButton
+            onClick={() => setVideoVisible(true)}
+            src='https://www.youtube-nocookie.com/embed/si1OwWjZnk0?playlist=si1OwWjZnk0&autoplay=1&controls=0&looping=1&disablekb=1&modestbranding=1&mute=1'
+          />
+        </div>
 
         {videoVisible && (
           <Modal
             onClose={() => setVideoVisible(false)}
           >
-            <iframe width='100%' height='100%' src='https://www.youtube-nocookie.com/embed/si1OwWjZnk0?autoplay=1' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowFullScreen />
+            <iframe width='100%' height='100%' src='https://www.youtube-nocookie.com/embed/si1OwWjZnk0?autoplay=1' title='YouTube video player' frameborder='0' allow='autoplay; encrypted-media; picture-in-picture' allowFullScreen />
           </Modal>
         )}
+
       </div>
 
     </Container>

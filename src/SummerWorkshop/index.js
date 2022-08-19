@@ -3,6 +3,7 @@ import styles from './SummerWorkshop.module.css'
 import Container from '../components/Container'
 import ActionButton from '../components/ActionButton'
 import Card from '../components/Card'
+import CardHolder from '../components/CardHolder'
 import Profile from '../components/Profile'
 
 import logo from '../images/logo.png'
@@ -123,7 +124,7 @@ const contacts = [
   }
 ]
 
-function SummerWorkshop(props) {
+function SummerWorkshop (props) {
   return (
     <div>
       {/* Header */}
@@ -157,7 +158,7 @@ function SummerWorkshop(props) {
       <Container isPadded>
         <h2>Past projects</h2>
 
-        <div className={styles.projectsList}>
+        <CardHolder>
           {pastProjects.map(({ name, img, link, desc }) => (
             <Card
               key={name}
@@ -167,7 +168,7 @@ function SummerWorkshop(props) {
               text={desc}
             />
           ))}
-        </div>
+        </CardHolder>
 
       </Container>
 
@@ -226,7 +227,7 @@ function SummerWorkshop(props) {
               <td>June 16</td>
             </tr>
             <tr>
-              <th >2</th>
+              <th>2</th>
               <td>
                 Learn about Git and verison control,
                 initial team meetings (schedule, req doc, design doc)
@@ -244,37 +245,37 @@ function SummerWorkshop(props) {
               <td>schedule</td>
             </tr>
             <tr>
-              <th >3</th>
+              <th>3</th>
               <td>Production begins. What to do during this phase.</td>
               <td>June 28</td>
             </tr>
             <tr>
-              <th >4</th>
+              <th>4</th>
               <td>How to playtest. Artist, programmer, designer, and producer meetings.</td>
               <td>July 5</td>
             </tr>
             <tr>
-              <th >5</th>
+              <th>5</th>
               <td>First Sprint evaluation (how succssful was sprint 1)</td>
               <td>July 12</td>
             </tr>
             <tr>
-              <th >6</th>
+              <th>6</th>
               <td>Mid-Sprint evaluation. (how have you adjusted your process?)</td>
               <td>July 19</td>
             </tr>
             <tr>
-              <th >7</th>
+              <th>7</th>
               <td>Second Sprint evaluation.</td>
               <td>July 26</td>
             </tr>
             <tr>
-              <th >8</th>
+              <th>8</th>
               <td>Mid-Sprint evaluation</td>
               <td>August 2</td>
             </tr>
             <tr>
-              <th >9</th>
+              <th>9</th>
               <td>Presentations.</td>
               <td>August 9</td>
             </tr>
