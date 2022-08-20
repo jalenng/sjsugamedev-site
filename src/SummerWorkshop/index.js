@@ -6,8 +6,7 @@ import Card from '../components/Card'
 import CardHolder from '../components/CardHolder'
 import Profile from '../components/Profile'
 
-import logo from '../images/logo.png'
-
+// Games
 import breakImg from './img/2022/break.png'
 import coilCat from './img/2022/coil-cat.png'
 import cyber20s from './img/2022/cyber-20s.jpg'
@@ -21,6 +20,12 @@ import summergame1 from './img/2022/summergame1.png'
 import summergame2 from './img/2022/summergame2.png'
 import summergame3 from './img/2022/summergame3.png'
 import summergame4 from './img/2022/summergame4.png'
+
+// Contacts
+import logo from '../images/logo.png'
+import rafaelImage from '../images/officers/rafael.png'
+import joshImage from '../images/officers/josh.png'
+import jamesImage from '../images/officers/james.webp'
 
 const pastProjects = [
   {
@@ -101,7 +106,7 @@ const contacts = [
   {
     name: 'James Morgan',
     position: 'Art/CS',
-    image: logo,
+    image: jamesImage,
     text: 'james.morgan@sjsu.edu'
   },
   {
@@ -113,13 +118,13 @@ const contacts = [
   {
     name: 'Rafael Padilla Perez',
     position: 'Production Lead',
-    image: logo,
+    image: rafaelImage,
     text: 'rafael.padillaperez@sjsu.edu'
   },
   {
     name: 'Josh Smith',
     position: 'Game Design Lead',
-    image: logo,
+    image: joshImage,
     text: 'joshua.l.smith@sjsu.edu'
   }
 ]

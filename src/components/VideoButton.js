@@ -13,8 +13,8 @@ function VideoButton (props) {
 
       <iframe
         className={styles.video}
-        width='105%'
-        height='105%'
+        width='100%'
+        height='100%'
         src={props.src}
         title='YouTube video player'
         frameborder='0'
@@ -23,9 +23,7 @@ function VideoButton (props) {
 
       <div className={styles.gradientOverlay} />
 
-      <div className={styles.overlayPlayIcon}>
-        <img src={playIcon} alt='Play' width='32' height='32' class='svg' />
-      </div>
+      <img src={playIcon} alt='Play' width='32' height='32' class='svg' />
 
     </a>
   )

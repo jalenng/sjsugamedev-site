@@ -16,24 +16,14 @@
   transform: translate(-50%, -50%);
 }
 
-.overlayPlayIcon {
+.button img {
+  width: 64px;
+  height: 64px;
+
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
-  width: 64px;
-  height: 64px;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.overlayPlayIcon img {
-  width: 64px;
-  height: 64px;
 }
 
 .gradientOverlay {

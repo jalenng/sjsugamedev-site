@@ -1,20 +1,11 @@
-import { useState } from 'react'
-
-import Modal from './Modal'
 
 import styles from './Card.module.css'
 
 function Card (props) {
-  const [modalIsOpen, setModalIsOpen] = useState(false)
-
-  function toggleModal () {
-    setModalIsOpen(!modalIsOpen)
-  }
-
   return (
     <div>
 
-      <a className={styles.card} href={props.href} onClick={toggleModal}>
+      <a className={styles.card} href={props.href} onClick={props.onClick}>
         {/* Image */}
         <img src={props.img} className={styles.img} />
 
@@ -27,10 +18,6 @@ function Card (props) {
           <p>{props.text}</p>
         </div>
       </a>
-
-      {/* Modal */}
-      {modalIsOpen &&
-        <Modal>TEST</Modal>}
 
     </div>
   )

@@ -3,45 +3,145 @@ import NextEvent from './NextEvent'
 import UpcomingEvents from './UpcomingEvents'
 
 const EVENT_TYPES = {
-  meeting: 'Meeting'
+  meeting: 'Meeting',
+  workshop: 'Workshop',
+  outreach: 'Outreach'
+}
+
+const EVENT_STYLE = {
+  inPerson: 'In-person',
+  hybrid: 'Hybrid',
+  online: 'Online'
 }
 
 const events = [
   {
-    name: 'First Meeting',
+    name: 'Intro Meeting + Showcase',
     date: 'Sept. 1st',
     time: '7:30 PM PST',
     type: [EVENT_TYPES.meeting],
+    style: EVENT_STYLE.hybrid,
     desc: 'Come join us for our first meeting of the year! We will be discussing our plans for the year and what we want to accomplish. We will be meeting on Discord and in the Lower Level of SJSU Library. We hope to see you there!'
   },
   {
-    name: 'Meeting',
+    name: 'Game Night',
     date: 'Sept. 8th',
-    time: '7:30 PM PST'
+    time: '7:30 PM PST',
+    type: [EVENT_TYPES.meeting],
+    style: EVENT_STYLE.hybrid,
+    desc: 'Stay tuned for more information about this event.'
+  },
+  {
+    name: '7th Street Tabling',
+    date: 'Sept. 13th',
+    time: '1:00 PM PST',
+    type: [EVENT_TYPES.outreach],
+    style: EVENT_STYLE.inPerson,
+    desc: 'Stay tuned for more information about this event.'
   },
   {
     name: 'Meeting',
-    date: 'Sept. 15th'
+    date: 'Sept. 15th',
+    time: '7:30 PM PST',
+    type: [EVENT_TYPES.meeting],
+    style: EVENT_STYLE.hybrid,
+    desc: 'Stay tuned for more information about this event.'
   },
   {
     name: 'Meeting',
-    date: 'Sept. 22nd'
+    date: 'Sept. 22nd',
+    time: '7:30 PM PST',
+    type: [EVENT_TYPES.meeting],
+    style: EVENT_STYLE.hybrid,
+    desc: 'Stay tuned for more information about this event.'
   },
   {
     name: 'Meeting',
-    date: 'Sept. 29th'
+    date: 'Sept. 29th',
+    time: '7:30 PM PST',
+    type: [EVENT_TYPES.meeting],
+    style: EVENT_STYLE.hybrid,
+    desc: 'Stay tuned for more information about this event.'
   },
   {
     name: 'Meeting',
-    date: 'Oct. 6th'
+    date: 'Oct. 6th',
+    time: '7:30 PM PST',
+    type: [EVENT_TYPES.meeting],
+    style: EVENT_STYLE.hybrid,
+    desc: 'Stay tuned for more information about this event.'
   },
   {
     name: 'Meeting',
-    date: 'Oct. 13th'
+    date: 'Oct. 13th',
+    time: '7:30 PM PST',
+    type: [EVENT_TYPES.meeting],
+    style: EVENT_STYLE.hybrid,
+    desc: 'Stay tuned for more information about this event.'
   },
   {
     name: 'Meeting',
-    date: 'Oct. 20th'
+    date: 'Oct. 20th',
+    time: '7:30 PM PST',
+    type: [EVENT_TYPES.meeting],
+    style: EVENT_STYLE.hybrid,
+    desc: 'Stay tuned for more information about this event.'
+  },
+  {
+    name: 'Meeting',
+    date: 'Oct. 27th',
+    time: '7:30 PM PST',
+    type: [EVENT_TYPES.meeting],
+    style: EVENT_STYLE.hybrid,
+    desc: 'Stay tuned for more information about this event.'
+  },
+  {
+    name: 'Meeting',
+    date: 'Nov. 3rd',
+    time: '7:30 PM PST',
+    type: [EVENT_TYPES.meeting],
+    style: EVENT_STYLE.hybrid,
+    desc: 'Stay tuned for more information about this event.'
+  },
+  {
+    name: 'Meeting',
+    date: 'Nov. 10th',
+    time: '7:30 PM PST',
+    type: [EVENT_TYPES.meeting],
+    style: EVENT_STYLE.hybrid,
+    desc: 'Stay tuned for more information about this event.'
+  },
+  {
+    name: 'Meeting',
+    date: 'Nov. 17th',
+    time: '7:30 PM PST',
+    type: [EVENT_TYPES.meeting],
+    style: EVENT_STYLE.hybrid,
+    desc: 'Stay tuned for more information about this event.'
+  },
+  {
+    name: 'Meeting',
+    date: 'Nov. 24th',
+    time: '7:30 PM PST',
+    type: [EVENT_TYPES.meeting],
+    style: EVENT_STYLE.hybrid,
+    desc: 'Stay tuned for more information about this event.'
+  },
+  {
+    name: 'Meeting',
+    date: 'Dec. 1st',
+    time: '7:30 PM PST',
+    type: [EVENT_TYPES.meeting],
+    style: EVENT_STYLE.hybrid,
+    desc: 'Stay tuned for more information about this event.'
+  },
+  {
+    name: 'Meeting',
+    date: 'Dec. 8th',
+    time: '7:30 PM PST',
+    type: [EVENT_TYPES.meeting],
+    style: EVENT_STYLE.hybrid,
+    desc: 'Stay tuned for more information about this event.'
   }
 ]
 

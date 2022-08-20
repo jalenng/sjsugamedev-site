@@ -8,7 +8,17 @@ function Modal (props) {
 
       <div className={styles.backdrop} onClick={props.onClose} />
 
-      <div className={styles.container}>
+      <div
+        className={[
+          styles.container,
+          (props.sixteenByNine && styles.sixteenByNine),
+          (props.small && styles.small)
+        ].join(' ')}
+        style={{
+          backgroundColor: props.bgColor
+        }}
+      >
+
         {/* Close button */}
         <button className={styles.closeBtn} onClick={props.onClose}>
           <img src={xIcon} alt='Close' width='32' height='32' class='svg' />
@@ -16,6 +26,7 @@ function Modal (props) {
 
         {/* Content */}
         {props.children}
+
       </div>
 
     </div>

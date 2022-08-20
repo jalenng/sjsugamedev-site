@@ -45,15 +45,17 @@ function Greeter () {
           {/* Button */}
           <VideoButton
             onClick={() => setVideoVisible(true)}
-            src='https://www.youtube-nocookie.com/embed/si1OwWjZnk0?playlist=si1OwWjZnk0&autoplay=1&controls=0&looping=1&disablekb=1&modestbranding=1&mute=1'
+            src='https://www.youtube-nocookie.com/embed/8ofLMFsL7u4?autoplay=1&controls=0&looping=1&disablekb=1&modestbranding=1&mute=1'
           />
         </div>
 
         {videoVisible && (
           <Modal
             onClose={() => setVideoVisible(false)}
+            bgColor='#000000'
+            sixteenByNine
           >
-            <iframe width='100%' height='100%' src='https://www.youtube-nocookie.com/embed/si1OwWjZnk0?autoplay=1' title='YouTube video player' frameborder='0' allow='autoplay; encrypted-media; picture-in-picture' allowFullScreen />
+            <iframe width='100%' height='100%' src='https://www.youtube-nocookie.com/embed/8ofLMFsL7u4?autoplay=1' title='YouTube video player' frameborder='0' allow='autoplay; encrypted-media; picture-in-picture' allowFullScreen />
           </Modal>
         )}
 

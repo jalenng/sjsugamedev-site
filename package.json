@@ -1,8 +1,8 @@
 {
-  "name": "sjsugamedev-site",
+  "name": "sjsugamedev.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jalenng.github.io/sjsugamedev-site/",
+  "homepage": "https://sjsugamedev.github.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -43,6 +43,11 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "standard": {
+    "ignore": [
+      "/public/archive/*"
     ]
   }
 }

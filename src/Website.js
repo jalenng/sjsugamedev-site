@@ -43,7 +43,7 @@ function Website () {
         </Banner> */}
 
         <Banner>
-          Is something missing? <a href='https://sjsugamedev.com'>Visit the old site</a>
+          Is something missing? <a href='/archive'>Visit the old site</a>
         </Banner>
 
         <Header tabs={tabs} />
